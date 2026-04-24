@@ -119,3 +119,60 @@ gsap.to(".footer-watermark", {
     ease: "none"
 });
 // =============================================
+
+const form = document.querySelector('.custom-form');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault(); // Impede a página de recarregar
+  
+  const data = new FormData(event.target);
+  const button = form.querySelector('.btn-send');
+  
+  button.innerText = "ENVIANDO...";
+  button.disabled = true;
+
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+    form.reset(); // Limpa o formulário
+  } else {
+    alert('Ops! Algo deu errado. Tente novamente mais tarde.');
+  }
+  
+  button.innerText = "ENVIAR MENSAGEM";
+  button.disabled = false;
+});
+
+
+// =============================================
+// ANIMAÇÃO: SEÇÃO SOBRE MIM DETALHADA (GSAP)
+// =============================================
+gsap.from(".about-detailed-content > *", {
+    scrollTrigger: {
+        trigger: ".about-detailed-section",
+        start: "top 70%",
+    },
+    y: 50,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power3.out"
+});
+
+gsap.from(".visual-center", {
+    scrollTrigger: {
+        trigger: ".about-detailed-section",
+        start: "top 60%",
+    },
+    scale: 0.8,
+    opacity: 0,
+    duration: 1.5,
+    ease: "expo.out"
+});
