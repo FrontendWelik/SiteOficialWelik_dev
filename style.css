@@ -111,6 +111,7 @@ text-decoration: none;
   top: 66.5%;
   right: 50px;
   z-index: 100; 
+  border: 0;
 }
 .cta-circle2 a i{
     font-size: 30px;
