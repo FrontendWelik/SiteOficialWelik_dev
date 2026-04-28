@@ -1,0 +1,227 @@
+HTML :
+
+<!-- seção planos -->
+<section class="pricing-detailed-section" id="investimento">
+    <div class="pricing-header">
+        <div class="about-label"><span class="dot-spin"></span> MODELOS DE NEGÓCIO</div>
+        <h2 class="about-title">Invista na <span>evolução do seu digital.</span></h2>
+    </div>
+
+    <div class="pricing-container">
+        <div class="pricing-column">
+            <div class="column-header">
+                <i class="bi bi-briefcase"></i>
+                <h3>Contrato por Projeto</h3>
+                <p>Ideal para soluções pontuais e lançamentos.</p>
+            </div>
+
+            <div class="plan-item">
+                <h4>Plano A: Start</h4>
+                <p>Desenvolvimento de 1 projeto Web OU estratégia de Marketing Digital focada em uma ação específica até a conclusão.</p>
+                <span class="badge">Hospedagem do site pago aparte</span>
+                <span class="btn-contratar"><a href="">contratar</a></span>
+            </div>
+
+            <div class="plan-item highlight">
+                <h4>Plano B: Growth</h4>
+                <p>Solução híbrida: Desenvolvimento Web + Marketing Digital focado em escalar o site criado para máxima performance.</p>
+                <span class="badge">Hospedagem Inclusa</span>
+                <span class="btn-contratar"><a href="">contratar</a></span>
+            </div>
+
+            <div class="plan-item">
+                <h4>Plano C: Scale (Full)</h4>
+                <p>O ecossistema completo: Desenvolvimento Web + Ação de Marketing + Automação de processos com N8N para seu negócio.</p>
+                <span class="badge">Hospedagem Inclusa</span>
+                <span class="btn-contratar"><a href="">contratar</a></span>
+            </div>
+
+            <div class="pricing-disclaimer alert">
+                <p><i class="bi bi-info-circle alert"></i> 
+                    Valores por projeto com prazos definidos. Domínios e trocas de DNS são valores à parte.
+                    Entrar em contato para mais informações sobre
+                </p>
+            </div>
+        </div>
+
+        <div class="pricing-column">
+            <div class="column-header">
+                <i class="bi bi-arrow-repeat"></i>
+                <h3>Planos de Assinatura</h3>
+                <p>Gestão contínua e evolução mensal.</p>
+            </div>
+
+            <div class="plan-item">
+                <h4>Assinatura A</h4>
+                <p>Administração profissional dedicada ao seu website OU gestão completa da sua campanha de marketing.</p>
+                <span class="badge">Hospedagem Inclusa</span>
+                <span class="btn-contratar"><a href="">contratar</a></span>
+            </div>
+
+            <div class="plan-item highlight">
+                <h4>Assinatura B</h4>
+                <p>Gestão unificada: Administração total do seu website + Campanhas de marketing ativas mensais.</p>
+                <span class="badge">Hospedagem Inclusa</span>
+                <span class="btn-contratar"><a href="">contratar</a></span>
+            </div>
+
+            <div class="plan-item">
+                <h4>Assinatura C: Elite</h4>
+                <p>Administração, manutenção preventiva, campanhas de marketing e monitoramento de ferramentas N8N.</p>
+                <span class="badge">Hospedagem Inclusa</span>
+                <span class="btn-contratar"><a href="">contratar</a></span>
+            </div>
+
+            <div class="pricing-disclaimer alert">
+                <p><i class="bi bi-info-circle alert"></i> Válido para projetos hospedados em meu servidor (Host própria) para garantir agilidade na manutenção.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-footer">
+        <a href="https://wa.link/jyk6kf" class="btn-primary">Consultar Orçamento Detalhado</a>
+    </div>
+</section>
+<!-- fim seção planos -->
+
+
+CSS:
+
+
+/*planos */
+.pricing-detailed-section {
+    padding: 100px 10%;
+    background: #050505;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.pricing-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.column-header {
+    margin-bottom: 20px;
+}
+
+.column-header i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.column-header h3 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.column-header p {
+    color: var(--gray);
+}
+
+/* Itens de Plano */
+.plan-item {
+    padding: 25px;
+    border-left: 2px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(90deg, rgba(57, 0, 213, 0.02) 0%, transparent 100%);
+    transition: 0.4s;
+}
+
+.plan-item h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.plan-item p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.plan-item.highlight {
+    border-left-color: var(--accent);
+    background: linear-gradient(90deg, rgba(57, 0, 213, 0.05) 0%, transparent 100%);
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.btn-contratar a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    background: rgb(3, 107, 3);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Avisos Legais */
+.pricing-disclaimer {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+}
+
+.alert{
+    color: red;
+}
+
+.pricing-disclaimer p {
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.pricing-footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.pricing-footer a{
+    text-decoration: none;
+    color:  var(--gray);
+}
+
+.btn-primary{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+}
+
+.btn-primary:hover{
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .pricing-container { grid-template-columns: 1fr; gap: 80px; }
+}
+
